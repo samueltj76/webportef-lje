@@ -1,0 +1,198 @@
+body {
+    font-family:Arial,sans-serif ; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.6; /* Sett linjehøyde for bedre lesbarhet */
+    color: #333; /* Definer tekstfarge */
+    background-color: #f9f9f9; /* Sett bakgrunnsfarge på siden */
+}
+
+/* Hoved container som holder innholdet */
+.hoved-conteiner {
+    display: grid; /* Bruker grid layout */
+    grid-template-columns: 1fr; /* Enkolonne layout */
+    gap: 2rem; /* Legger til avstand mellom elementene */
+    max-width: 1600px; /* Maks bredde på containeren */
+    margin: 0 auto; /* Sentrerer containeren horisontalt */
+}
+
+/* Header-stiler */
+header {
+    background: #121212; /* Mørk bakgrunnsfarge for header */
+    color: #fff; /* Hvit tekstfarge i header */
+    padding: 1rem 0; /* Padding på top og bunn av header */
+}
+
+/* Logo-stil */
+.logo {
+    display: block; /* Gjør logoen til et blokk-element */
+    margin-bottom: 3rem; /* Legger til margin under logo */
+    justify-content: center; /* Sentrerer logoen horisontalt */
+    align-items: start; /* Justerer logoen vertikalt */
+    display: flex; 
+    font-size: 50px; /* Setter fontstørrelsen på logoen */
+}
+
+/* Navigasjonslinker */
+.nav-links {
+    list-style: none; /* Fjerner punktene på liste */
+    display: flex; /* Bruker flexbox for å legge lenker horisontalt */
+    justify-content: center; /* Sentrerer lenkene */
+    padding: 0; 
+    margin: 0; 
+}
+
+/* Stil for hvert navigasjonspunkt */
+.nav-links li {
+    margin: 0 1rem; /* Legger til mellomrom mellom listene */
+}
+
+/* Stil for lenkene i navigasjonen */
+.nav-links a {
+    color: #fff; /* Setter tekstfarge på lenkene */
+    text-decoration: none; /* Fjerner understreking på lenkene */
+    font-weight: bold;
+}
+
+/* Stiler for "Om meg", "Prosjekter" og "Kontakt" seksjonene */
+.about, .projects, .contact {
+    padding: 2rem; /* Legger til padding rundt innholdet */
+    text-align: center; /* Sentrerer teksten */
+}
+
+/* "Om meg"-seksjonen */
+.about {
+    display: grid; /* Bruker grid layout */
+    grid-template-columns: 1fr; /* En kolonne */
+    gap: 0.5rem; /* Legger til mellomrom mellom elementene */
+    text-align: left; /* Justerer teksten til venstre */
+    list-style: none; /* Fjerner listepunkt */
+    padding: 4rem; /* Legger til padding rundt seksjonen */
+    max-width: 600px; /* Maks bredde på "Om meg"-seksjonen */
+    margin: 2rem auto; /* Sentrerer seksjonen og legger til margin */
+    font-family: Arial, sans-serif; 
+}
+
+/* Stil for overskriftene i "Om meg"-seksjonen */
+.about h3 {
+    font-size: 1.3rem; 
+}
+
+/* Stil for hovedoverskriften i "Om meg"-seksjonen */
+.about h2 {
+    display: flex; /* Bruker flexbox for å plassere overskriften */
+    justify-content: center; /* Sentrerer overskriften */
+    font-size: 2rem; 
+}
+
+/* Stil for elementene i "Om meg"-seksjonens ferdighetsliste */
+.about li {
+    padding: 0; 
+    text-align: center; /* Sentrerer teksten */
+    max-width: 600px; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    text-decoration: none; /* Fjerner tekstdekning */
+}
+
+/* Stil for beskrivelsen i "Om meg"-seksjonen */
+.about p {
+    font-size: 1.25rem; 
+    line-height: 1.8; /* Setter linjehøyden for bedre lesbarhet */
+    color: #555; /* Setter tekstfargen */
+    margin-bottom: 1.5rem; /* Legger til margin under avsnittet */
+}
+
+/* Ferdighetsseksjonen */
+.ferdigheter {
+    display: flex; 
+    justify-content: center; /* Sentrerer ferdighetene listen */
+    width: 600px; /* Setter bredde på ferdighetseksjonen */
+    margin-top: 10px; /* Legger til margin på toppen */
+    font-size: 2rem; 
+}
+
+/* Understreking av ferdigheter i listen */
+.liste {
+    border-bottom: 2px solid #ddd; /* Legger til en linje under ferdighetene */
+}
+
+/* Prosjektcontaineren */
+.project-container {
+    display: flex; /* Bruker flexbox */
+    flex-direction: column; /* legger prosjektene vertikalt over hverandre */
+    align-items: center; 
+    gap: 3rem; /* Legger til mellomrom mellom prosjektene */
+    margin-top: 1rem; /* Legger til margin på toppen */
+}
+
+/* Styling av hver prosjektboks */
+.project {
+    display: flex; /* Bruker flexbox for å plassere innholdet horisontalt */
+    justify-content: space-between; /* Fordeler plass mellom innholdet */
+    align-items: center; /* Sentrerer innholdet vertikalt */
+    background: #fff; /* Hvit bakgrunn på prosjektboksen */
+    padding: 1rem; /* Legger til padding rundt innholdet */
+    border: 1px solid #ddd; /* Legger til en grå kantlinje rundt boksen */
+    border-radius: 5px; /* Runder hjørnene på boksen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Legger til en lett skygge */
+    width: 800px; /* Setter bredde på prosjektboksen */
+    height: 300px; /* Setter høyde på prosjektboksen */
+}
+
+/* Styling for tekstinnhold i prosjektboksen */
+.project .text-content {
+    flex: 1; /* Sørger for at tekstinnholdet tar opp ledig plass */
+    text-align: left; /* Justerer teksten til venstre */
+    margin-right: 1rem; /* Legger til margin på høyre side */
+}
+
+/* Styling for bildene i prosjektboksen */
+.project .image {
+    flex-shrink: 0; /* Forhindrer at bildet krymper */
+    width: 150px; /* Setter bredden på bildet */
+    height: 150px; /* Setter høyden på bildet */
+    object-fit: cover; /* Sørger for at bildet fyller boksen  */
+    border-radius: 5px; /* Runder hjørnene på bildet */
+}
+
+/* Hover-effekt for prosjektnavnene */
+.project .text-content a:hover {
+    text-decoration: underline; /* Understreker lenken når den hovres */
+}
+
+/* Styling av hver prosjektboks */
+#box1, #box2, #box3 {
+    display: flex; 
+    align-items: center; /* Sentrerer innholdet vertikalt */
+    justify-content: flex-start; /* Justerer innholdet til venstre */
+}
+
+/* Ulike bakgrunnsfarger for hvert prosjekt */
+#box1 {
+    background: #f8d7da; /* bakgrunn for prosjekt 1 */
+}
+
+#box2 {
+    background: #d4edda; /* bakgrunn for prosjekt 2 */
+}
+
+#box3 {
+    background: #d1ecf1; /* bakgrunn for prosjekt 3 */
+}
+
+/* Hover-effekt for prosjektboksene */
+#box1:hover, #box2:hover, #box3:hover {
+    transform: scale(1.02); /* Forstørrer boksen litt når den hoverer */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Legger til en skygge ved hover */
+}
+
+/* Footer-stil */
+footer {
+    text-align: center; /* Sentrerer tekst i footer */
+    padding: 1rem; /* Legger til padding rundt footer */
+    background: #121212; /* Mørk bakgrunn på footer */
+    color: #fff; /* Hvit tekstfarge i footer */
+    margin-top: 2rem; /* Legger til margin på toppen */
+    height: 170px; /* Setter høyde på footer */
+}
